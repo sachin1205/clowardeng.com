@@ -16,8 +16,10 @@
     background-position: center center;
     background-repeat: no-repeat;*/
     .site-intro-wrap{
-        padding-bottom:0;
-        padding-top:0;
+        /*padding-bottom:0;
+        padding-top:0;*/
+        background-color: rgba(0,0,0,0.4);
+    max-width: 100%;
     }
 }
 
@@ -173,7 +175,8 @@
     }
 }
 .si-heading{
-	color:$dark-blue;
+	//color:$dark-blue;
+    color: white;
 	font-family:$base-font-family;
 	font-size: 26px;
 	font-weight: 500;
@@ -187,7 +190,8 @@
     }
 }
 .si-text{
-	color:$gray;
+	//color:$gray;
+    color: white;
 	font-family:'goudy_old_styleregular';
 	font-size: 15px;
 	font-weight: normal;

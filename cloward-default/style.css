@@ -1107,10 +1107,10 @@ input[type="submit"], .btn-download, .btn-arrow, .product-grid-item-link, .btn-a
   -moz-transition: background 0.1s linear;
   transition: background 0.1s linear; }
   .btn:hover, button:hover,
-  input[type="submit"]:hover, .btn-download:hover, .btn-arrow:hover, .product-grid-item-link:hover, .btn-alt:hover, .btn-alt-download:hover, .btn-alt-arrow:hover {
+  input:hover[type="submit"], .btn-download:hover, .btn-arrow:hover, .product-grid-item-link:hover, .btn-alt:hover, .btn-alt-download:hover, .btn-alt-arrow:hover {
     color: white; }
   .btn:disabled, button:disabled,
-  input[type="submit"]:disabled, .btn-download:disabled, .btn-arrow:disabled, .product-grid-item-link:disabled, .btn-alt:disabled, .btn-alt-download:disabled, .btn-alt-arrow:disabled {
+  input:disabled[type="submit"], .btn-download:disabled, .btn-arrow:disabled, .product-grid-item-link:disabled, .btn-alt:disabled, .btn-alt-download:disabled, .btn-alt-arrow:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
   .btn:after, button:after,
@@ -1129,7 +1129,7 @@ input[type="submit"], .btn-download, .btn-arrow, .product-grid-item-link, .btn-a
 input[type="submit"], .btn-download, .btn-arrow, .product-grid-item-link {
   background-color: #bfce46; }
   .btn:hover, button:hover,
-  input[type="submit"]:hover, .btn-download:hover, .btn-arrow:hover, .product-grid-item-link:hover {
+  input:hover[type="submit"], .btn-download:hover, .btn-arrow:hover, .product-grid-item-link:hover {
     background-color: #a3b22f; }
   .btn:after, button:after,
   input[type="submit"]:after, .btn-download:after, .btn-arrow:after, .product-grid-item-link:after {
@@ -2374,8 +2374,10 @@ figure {
     background-position: center center;
     background-repeat: no-repeat;*/ }
   .site-header-wrap .site-intro-wrap {
-    padding-bottom: 0;
-    padding-top: 0; }
+    /*padding-bottom:0;
+        padding-top:0;*/
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 100%; }
 
 @media (min-width: 60em) {
   .sh-sticky-wrap {
@@ -2495,7 +2497,7 @@ figure {
     width: 50%; } }
 
 .si-heading {
-  color: #0d55a4;
+  color: white;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 500;
@@ -2509,7 +2511,7 @@ figure {
       font-size: 36px; } }
 
 .si-text {
-  color: #434142;
+  color: white;
   font-family: 'goudy_old_styleregular';
   font-size: 15px;
   font-weight: normal;
